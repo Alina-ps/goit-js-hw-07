@@ -33,5 +33,5 @@ for (let i = 0; i <= 6; i++) {
   image.src = images[i].url;
   image.alt = images[i].alt;
   list.append(item);
-  list.append(image);
+  item.append(image);
 }

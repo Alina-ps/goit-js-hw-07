@@ -13,7 +13,16 @@ body {
   line-height: 1.5;
 }
 
-/* task 1 */
+button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  border-radius: 8px;
+}
+
+/*-------------------- task 1 -----------------------*/
 
 #categories {
   list-style-type: none;
@@ -52,31 +61,26 @@ body {
   margin-bottom: 0;
 }
 
-/* task 2 */
+/*-------------------- task 2 -----------------------*/
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
-
-  /* margin: 0 auto; */
+  align-items: center;
   gap: 48px 24px;
-  padding: 0;
 }
 
 .gallery li {
   list-style-type: none;
-  /* width: calc((100% - 24px * 2) / 3); */
 }
 
 .gallery img {
   width: 360px;
   height: 300px;
-  max-width: 1128px;
 }
 
-/* task 3 */
+/*-------------------- task 3 -----------------------*/
 
 #name-input {
   font-weight: 400;
@@ -89,6 +93,11 @@ body {
   padding: 8px 0 8px 16px;
 }
 
+#name-input:hover,
+#name-input:focus {
+  border: 1px solid #000;
+}
+
 h1 {
   font-weight: 600;
   font-size: 24px;
@@ -96,7 +105,7 @@ h1 {
   line-height: 1.33;
 }
 
-/* task 4 */
+/*-------------------- task 4 -----------------------*/
 
 .login-form {
   display: flex;
@@ -131,17 +140,11 @@ h1 {
 }
 
 .login-form button {
-  border-radius: 8px;
   padding: 8px 16px;
   width: 86px;
   height: 40px;
   background-color: #4e75ff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
   color: #fff;
-  border: none;
   margin-top: 8px;
 }
 
@@ -150,7 +153,7 @@ h1 {
   background-color: #6c8cff;
 }
 
-/* task 5 */
+/*-------------------- task 5 -----------------------*/
 
 .widget {
   position: fixed;
@@ -177,8 +180,8 @@ h1 {
 .change-color {
   padding: 8px 16px;
   background-color: #4e75ff;
+  border: none;
   color: #ffffff;
-  border: 1px solid #4e75ff;
   border-radius: 8px;
   font-weight: 500;
   font-size: 16px;
@@ -186,4 +189,69 @@ h1 {
   letter-spacing: 0.04em;
   width: 148px;
   height: 40px;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: #6c8cff;
+}
+
+/*-------------------- task 6 -----------------------*/
+
+#controls {
+  display: flex;
+  gap: 16px;
+  background-color: #f6f6fe;
+  margin-bottom: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  width: 486px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;
+}
+
+#controls input:hover,
+#controls input:focus {
+  border: 1px solid #000;
+}
+
+#controls button {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  background-color: #4e75ff;
+}
+
+#controls button:hover,
+#controls button:focus {
+  background-color: #6c8cff;
+}
+
+#controls button:last-child {
+  background-color: #ff4e4e;
+}
+
+#controls button:last-child:hover,
+#controls button:last-child:focus {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  background-color: #f6f6fe;
+  padding: 32px;
+  gap: 44px;
+  border-radius: 8px;
+  width: 486px;
+  height: 134px;
 }
