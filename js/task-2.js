@@ -26,12 +26,15 @@ const images = [
 ];
 
 const list = document.querySelector('.gallery');
+const items = [];
 
-for (let i = 0; i <= 6; i++) {
+for (let i = 0; i < images.length; i++) {
   const item = document.createElement('li');
   const image = document.createElement('img');
   image.src = images[i].url;
   image.alt = images[i].alt;
-  list.append(item);
   item.append(image);
+  items.push(item);
 }
+
+list.append(...items);
